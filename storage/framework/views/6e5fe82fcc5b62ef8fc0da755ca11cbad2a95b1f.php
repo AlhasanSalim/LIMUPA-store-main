@@ -1,1 +1,0 @@
-Pagination View<?php /**PATH E:\xampp\htdocs\Laravel\adminLTE_backEnd\resources\views\pagination\custom.blade.php ENDPATH**/ ?>

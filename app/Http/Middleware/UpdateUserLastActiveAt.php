@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\User;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -18,7 +19,7 @@ class UpdateUserLastActiveAt
     public function handle(Request $request, Closure $next)
     {
         $user = $request->user();
-        if ($user){
+        if ( $user instanceof User ) {
 
             // forceFill() Method for Instead of adding it in fillable array at User model
             $user->forceFill([
